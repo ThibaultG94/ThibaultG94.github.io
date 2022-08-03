@@ -1,0 +1,62 @@
+.comment {
+    position: relative;
+    background: $color1;
+    z-index: 1;
+    padding: 82px 0;
+
+    @media screen and (max-width: 754px) {
+        margin-top: 200px;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        border-radius: 100px;
+        width: 75px;
+    }
+
+    p {
+        font-family: $font1;
+        font-size: 1.3rem;
+        max-width: 77%;
+        margin: 0 auto 40px;
+        line-height: 38px;
+
+        @media screen and (max-width: 220px) {
+            max-width: 99%;
+            font-size: 1rem;
+        }
+
+        &:before {
+            content: "\275D";
+            font-size: 1.8rem;
+        }
+
+        &:after {
+            content: "\00275E";
+            font-size: 1.8rem;
+        }
+    }
+
+    h4 {
+        font-family: $font1;
+        font-size: 1.9rem;
+        font-weight: normal;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 220px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    h5 {
+        font-family: $font1;
+        color: $color4;
+        font-weight: normal;
+        font-size: 1.2rem;
+    }
+
+
+}

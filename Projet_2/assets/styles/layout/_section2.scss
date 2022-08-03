@@ -1,0 +1,175 @@
+.reservation {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    min-width: 1000px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1020px) {
+        display: block;
+        min-width: 700px;
+    }
+
+    @media screen and (max-width: 754px) {
+        min-width: 100px;
+    }
+
+    .open {
+        background: $color5;
+        padding: 30px;
+
+        @media screen and (max-width: 305px) {
+            padding: 0px;
+        }
+
+        .open-container {
+            border: 1px dashed $color3;
+            padding-bottom: 43px;
+
+            h3 {
+                margin-top: 45px;
+                font-family: $font2;
+                color: $color4;
+                font-size: 3.1rem;
+                font-weight: normal;
+                line-height: 22px;
+            }
+
+            h2 {
+                color: $color1;
+                text-transform: uppercase;
+                font-family: $font3;
+                font-size: 1.6rem;
+                letter-spacing: 3px;
+                margin-bottom: 33px;
+            }
+
+            img {
+                margin-bottom: 50px;
+            }
+
+            h4 {
+                font-family: $font3;
+                color: $color4;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                font-weight: normal;
+            }
+
+            p {
+                font-family: $font1;
+                color: $color1;
+                margin: 16px 0 45px;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .reservation-container {
+        background: $color1;
+        padding: 116px 0 0;
+
+        @media screen and (max-width: 1020px) {
+            padding: 76px 0 40px;
+        }
+
+        h2 {
+            font-family: $font2;
+            color: $color4;
+            font-weight: normal;
+            font-size: 3.2rem;
+            line-height: 18px;
+
+            @media screen and (max-width: 246px) {
+                font-size: 2.3rem;
+            }
+
+            @media screen and (max-width: 179px) {
+                font-size: 1.7rem;
+            }
+        }
+
+        h3 {
+            font-family: $font3;
+            text-transform: uppercase;
+            font-size: 2.2rem;
+            margin-bottom: 31px;
+
+            @media screen and (max-width: 246px) {
+                font-size: 1.6rem;
+            }
+
+
+            @media screen and (max-width: 179px) {
+                font-size: 1.3rem;
+            }
+        }
+
+        img {
+            width: 32px;
+            margin-bottom: 60px;
+        }
+
+        form {
+
+            .reserv-form {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                max-width: 72%;
+                margin: 0 auto 35px;
+                gap: 25px;
+                justify-content: center;
+
+                @media screen and (max-width: 754px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                input,
+                select {
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid $color3;
+                    font-size: 1rem;
+                    padding-bottom: 13px;
+                    margin-bottom: 15px;
+                }
+
+                input:focus {
+                    outline: none;
+                    border-bottom: 1px solid $color2;
+                }
+
+            }
+
+            #submit {
+                background: $color5;
+                color: $color1;
+                padding: 15px 35px;
+                font-family: $font3;
+                text-transform: uppercase;
+                font-size: 1.1rem;
+                letter-spacing: 5px;
+                border-radius: 30px;
+                cursor: pointer;
+                transition: 0.3s ease;
+
+                &:hover {
+                    font-weight: bold;
+                    transform: scale(1.1);
+                }
+
+                @media screen and (max-width: 264px) {
+                    padding: 3px 7px;
+                    font-size: 0.8rem;
+                    border-radius: 150px;
+                }
+
+                @media screen and (max-width: 172px) {
+                    padding: 0px;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,156 @@
+footer {
+    background: url("../img/bg-footer.jpg") no-repeat center/cover;
+    color: $color1;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    @media screen and (max-width: 910px) {
+        display: block;
+        background: url("../img/bg-footer.jpg") no-repeat right;
+    }
+
+    .footer-left {
+        max-width: 590px;
+        margin: 70px 30px 85px auto;
+
+        @media screen and (max-width: 1300px) {
+            margin: 70px 30px 85px 20px;
+        }
+
+        @media screen and (max-width: 910px) {
+            display: none;
+        }
+
+        .footer-left-container {
+
+            h2 {
+                font-family: $font2;
+                color: $color4;
+                font-size: 3.1rem;
+                font-weight: normal;
+                margin-bottom: 4px;
+            }
+
+            p {
+                font-family: $font1;
+                color: $color3;
+                font-size: 1.1rem;
+                line-height: 37px;
+            }
+        }
+    }
+
+    .footer-right {
+        max-width: 385px;
+        margin: 80px auto 0 62px;
+
+        @media screen and (max-width: 910px) {
+            margin: 0px auto 0 62px;
+            padding: 80px 0 50px;
+        }
+
+        @media screen and (max-width: 463px) {
+            margin: 0px auto 0 20px;
+        }
+
+        @media screen and (max-width: 263px) {
+            margin: 0px auto 0 10px;
+        }
+
+        @media screen and (max-width: 223px) {
+            margin: 0px auto;
+        }
+
+        .footer-right-container {
+
+            h3 {
+                font-family: $font1;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 1.1rem;
+                margin-bottom: 18px;
+                min-width: 135px;
+            }
+
+            .news {
+
+                input {
+                    background: none;
+                    border: 1px solid rgba($color: $color3, $alpha: 0.1);
+                    padding: 10px 100px 10px 20px;
+                    font-size: 1rem;
+                    margin-bottom: 68px;
+
+                    @media screen and (max-width: 910px) {
+                        padding: 10px 75px 10px 20px;
+                    }
+
+                    @media screen and (max-width: 463px) {
+                        padding: 10px 50px 10px 20px;
+                    }
+
+                    @media screen and (max-width: 333px) {
+                        padding: 10px 10px 10px 20px;
+                    }
+
+                    @media screen and (max-width: 263px) {
+                        padding: 10px 5px 10px 10px;
+                    }
+
+                    @media screen and (max-width: 238px) {
+                        padding: 10px 0;
+                    }
+
+                    @media screen and (max-width: 220px) {
+                        padding: 0;
+                        max-width: 95%;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        background: rgba($color: $color1, $alpha: 0.95);
+                        color: $color2;
+                    }
+                }
+            }
+
+            .follow {
+                display: flex;
+
+                @media screen and (max-width: 421px) {
+                    flex-direction: column;
+                    max-width: 50%;
+                }
+
+                ul {
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: 25% 25% 25% 25%;
+
+                    @media screen and (max-width: 421px) {
+                        display: flex;
+                        max-width: 50%;
+                    }
+
+                    li {
+
+                        @media screen and (max-width: 421px) {
+                            margin-right: 10px;
+                        }
+
+                        i {
+                            color: rgba($color: $color3, $alpha: 0.4);
+                            transition: 0.3s ease;
+
+                            &:hover {
+                                transform: scale(1.1);
+                                color: $color1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
