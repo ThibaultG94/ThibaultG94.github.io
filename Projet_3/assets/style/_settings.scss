@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+$font1: 'Inter', sans-serif;
+$blackf: #111111;
+$black: #0D0D0D;
+$black2: #141617;
+$black3: #1A1A1A;
+$black4: #1B1B1B;
+$black5: #1D1D1D;
+$white: #FFFFFF;
+$grey1: #323232;
+$grey2: #353535;
+$grey3: #383838;
+$grey4: #5D5D5D;
+$greyf1: #AAAAAA;
+$greyf2: #888888;
+$color1: #8816e3;
+$color2: #d5149f;
+$color3: #474DFF;
+$color4: #0ACF83;
+$color5: #3B41E1;
+
+@mixin childCenter($space) {
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font1;
+    color: $white;
+    text-decoration: none;
+}
+
+body {
+    max-width: 100vw;
+    background: $black5;
+    text-align: left;
+    position: relative !important;
+}
+
+li {
+    list-style: none;
+}
+
+.button {
+    color: $white;
+    padding: 18px 26px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: 0.2s ease;
+    cursor: pointer;
+    background-color: $color3;
+    display: inline-block;
+
+    @media screen and (max-width: 465px) {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+        border-radius: 6px;
+    }
+
+    &--news {
+        @media screen and (max-width:260px) {
+            padding: 5px;
+
+        }
+    }
+
+    &--green {
+        background: #15D188;
+
+        @media screen and (max-width: 516px) {
+            margin-bottom: 20px;
+        }
+
+    }
+
+    &--blackFont {
+        color: $blackf;
+        margin-left: 5px;
+
+        @media screen and (max-width: 284px) {
+            margin-bottom: 15px;
+        }
+
+        &--purple {
+            background: #A334FB;
+        }
+
+        &--green {
+            background: $color4;
+        }
+    }
+
+    &:hover {
+        opacity: 0.8;
+        transform: translateY(2px);
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,136 @@
+.section-techno {
+
+    &__container {
+        max-width: 1050px;
+        margin: 0 auto;
+        padding: 100px 0;
+
+        @media screen and (max-width: 1200px) {
+            max-width: 1000px;
+        }
+
+        @media screen and (max-width: 991px) {
+            padding: 100px;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 50px;
+        }
+
+        @media screen and (max-width: 420px) {
+            padding: 0px;
+        }
+
+        &-header {
+
+            h2 {
+                font-size: 6.8rem;
+                letter-spacing: -6px;
+                margin-bottom: 20px;
+                line-height: 0.9;
+                max-width: 700px;
+
+                @media screen and (max-width: 1200px) {
+                    font-size: 6.7rem;
+                    letter-spacing: -4px;
+                }
+
+                @media screen and (max-width: 991px) {
+                    font-size: 5.6rem;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 4.3rem;
+                    letter-spacing: -3px;
+                }
+
+                @media screen and (max-width: 450px) {
+                    font-size: 3.9rem;
+                    text-align: center;
+                }
+            }
+
+            p {
+                margin-bottom: 20px;
+                font-size: 1.2rem;
+                line-height: 1.4;
+                opacity: 0.8;
+                max-width: 530px;
+            }
+        }
+
+        &-info {
+            @include childCenter(space-between);
+            flex-wrap: wrap;
+
+            @media screen and (max-width: 991px) {
+                justify-content: center;
+                // flex-direction: column;
+            }
+
+            &-content {
+                max-width: 430px;
+                margin: 10px;
+                min-width: 220px;
+                transition: 0.6s ease;
+                cursor: pointer;
+                border-radius: 20px;
+                background: $grey3;
+
+                @media screen and (max-width: 1200px) {
+                    max-width: 300px;
+                }
+
+
+                &-img {
+                    img {
+                        border-radius: 20px 20px 0 0;
+
+                        @media screen and (max-width: 1200px) {
+                            max-width: 300px;
+                        }
+
+                        @media screen and (max-width: 300px) {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &-text {
+                    padding: 30px;
+                    border-radius: 0 0 20px 20px;
+                    margin-top: -5px;
+                    height: 223px;
+                    display: block;
+
+
+                    @media screen and (max-width: 1200px) {
+                        max-width: 280px;
+                        height: 300px;
+                        margin: 0 auto;
+                    }
+
+                    h5 {
+                        font-size: 1.5rem;
+                        line-height: 1.4;
+                        letter-spacing: -0.5px;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        margin-bottom: 20px;
+                        font-size: 1.2rem;
+                        line-height: 1.4;
+                        opacity: 0.8;
+                        max-width: 260px;
+                    }
+                }
+
+                &:hover {
+                    scale: 1.08;
+                    background: $grey1;
+                }
+            }
+        }
+    }
+}
