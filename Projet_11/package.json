@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ThibaultG94/Projet-Bootstrap_5#readme",
   "dependencies": {
-    "bootstrap": "^5.2.2"
+    "bootstrap": "^5.2.2",
+    "uncss": "^0.17.3"
   }
 }
