@@ -1,5 +1,3 @@
-import "./style.css";
-
 const bubbleGenerator = () => {
   const bubble = document.createElement("span");
   let size = Math.random() * 200 + 100 + "px";
