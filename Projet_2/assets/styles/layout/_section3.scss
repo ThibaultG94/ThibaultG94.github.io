@@ -1,191 +1,193 @@
 .event {
-    margin: 161px 0 200px;
+	margin: 161px 0 200px;
 
-    @media screen and (max-width: 754px) {
-        display: none;
-    }
+	@media screen and (max-width: 754px) {
+		display: none;
+	}
 
-    .our-event {
-        h3 {
-            font-family: $font2;
-            color: $color4;
-            font-weight: normal;
-            font-size: 3rem;
-            line-height: 30px;
-        }
+	.our-event {
+		h3 {
+			font-family: $font2;
+			color: $color4;
+			font-weight: normal;
+			font-size: 3rem;
+			line-height: 30px;
+		}
 
-        h2 {
-            font-family: $font3;
-            text-transform: uppercase;
-            color: $color1;
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-            margin-bottom: 37px;
-        }
+		h2 {
+			font-family: $font3;
+			text-transform: uppercase;
+			color: $color1;
+			font-size: 2.5rem;
+			letter-spacing: 2px;
+			margin-bottom: 37px;
+		}
 
-        img {
-            margin-bottom: 30px;
-        }
-    }
+		img {
+			margin-bottom: 30px;
+		}
+	}
 
-    .event-container {
-        max-width: 95%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 60% 40%;
-        gap: 10px;
+	.event-container {
+		max-width: 95%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 60% 40%;
+		gap: 10px;
 
-        @media screen and (max-width: 1020px) {
-            display: block;
-        }
+		@media screen and (max-width: 1020px) {
+			display: block;
+		}
 
-        .event-container-left {
-            display: grid;
-            grid-template-areas: 50% 50%;
-            gap: 25px;
+		.event-container-left {
+			display: grid;
+			grid-template-areas: 50% 50%;
+			gap: 25px;
 
-            @media screen and (max-width: 1020px) {
-                display: none;
-            }
+			@media screen and (max-width: 1020px) {
+				display: none;
+			}
 
-            .event-left {
-                display: grid;
-                grid-template-columns: 37.3% 62.7%;
+			.event-left {
+				display: grid;
+				grid-template-columns: 37.3% 62.7%;
 
-                .first {
-                    background: url("../img/event-01.jpg") no-repeat center/cover;
-                }
+				.first {
+					background: url('../img/event-01.webp') no-repeat
+						center/cover;
+				}
 
-                .second {
-                    background: url("../img/event-02.jpg") no-repeat center/cover;
-                }
+				.second {
+					background: url('../img/event-02.webp') no-repeat
+						center/cover;
+				}
 
-                .event-left-img {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+				.event-left-img {
+					display: flex;
+					align-items: center;
+					justify-content: center;
 
-                    .left-july {
-                        background: $color2;
-                        color: $color1;
-                        padding: 26px 35px;
+					.left-july {
+						background: $color2;
+						color: $color1;
+						padding: 26px 35px;
 
-                        p {
-                            font-family: $font1;
-                            font-size: 2.1rem;
-                            font-weight: bold;
-                            line-height: 35px;
-                        }
+						p {
+							font-family: $font1;
+							font-size: 2.1rem;
+							font-weight: bold;
+							line-height: 35px;
+						}
 
-                        h5 {
-                            font-family: $font1;
-                            font-weight: lighter;
-                            font-size: 1.2rem;
-                        }
-                    }
-                }
+						h5 {
+							font-family: $font1;
+							font-weight: lighter;
+							font-size: 1.2rem;
+						}
+					}
+				}
 
-                .event-left-tickets {
-                    background: $color1;
-                    text-align: left;
-                    padding-left: 35px;
-                    margin-right: 16px;
+				.event-left-tickets {
+					background: $color1;
+					text-align: left;
+					padding-left: 35px;
+					margin-right: 16px;
 
-                    h4 {
-                        font-family: $font1;
-                        font-weight: normal;
-                        font-size: 1.6rem;
-                        letter-spacing: 1px;
-                        margin: 39px 0 26px;
-                    }
+					h4 {
+						font-family: $font1;
+						font-weight: normal;
+						font-size: 1.6rem;
+						letter-spacing: 1px;
+						margin: 39px 0 26px;
+					}
 
-                    p {
-                        font-family: $font1;
-                        color: $color3;
-                        font-size: 1.1rem;
-                        letter-spacing: 1px;
+					p {
+						font-family: $font1;
+						color: $color3;
+						font-size: 1.1rem;
+						letter-spacing: 1px;
 
-                        i {
-                            font-size: 0.9rem;
-                            vertical-align: 15%;
-                        }
-                    }
+						i {
+							font-size: 0.9rem;
+							vertical-align: 15%;
+						}
+					}
 
-                    h5 {
-                        font-family: $font1;
-                        text-transform: uppercase;
-                        font-size: 1rem;
-                        letter-spacing: 3px;
-                        margin: 33px 0 67px;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
+					h5 {
+						font-family: $font1;
+						text-transform: uppercase;
+						font-size: 1rem;
+						letter-spacing: 3px;
+						margin: 33px 0 67px;
+						cursor: pointer;
+					}
+				}
+			}
+		}
 
-        .event-container-right {
-            background: url("../img/event-03.jpg") no-repeat center/cover;
-            padding: 32px 0;
+		.event-container-right {
+			background: url('../img/event-03.webp') no-repeat center/cover;
+			padding: 32px 0;
 
-            .event-right {
-                background: $color1;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                max-width: 88%;
-                margin: 0 auto;
-                padding: 0 20px;
+			.event-right {
+				background: $color1;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				max-width: 88%;
+				margin: 0 auto;
+				padding: 0 20px;
 
-                .right-july {
-                    background: $color2;
-                    color: $color1;
-                    padding: 26px 35px;
-                    margin-bottom: 50px;
+				.right-july {
+					background: $color2;
+					color: $color1;
+					padding: 26px 35px;
+					margin-bottom: 50px;
 
-                    p {
-                        font-family: $font1;
-                        font-size: 2.1rem;
-                        font-weight: bold;
-                        line-height: 35px;
-                        color: $color1;
-                    }
+					p {
+						font-family: $font1;
+						font-size: 2.1rem;
+						font-weight: bold;
+						line-height: 35px;
+						color: $color1;
+					}
 
-                    h5 {
-                        font-family: $font1;
-                        font-weight: lighter;
-                        font-size: 1.2rem;
-                    }
-                }
+					h5 {
+						font-family: $font1;
+						font-weight: lighter;
+						font-size: 1.2rem;
+					}
+				}
 
-                h4 {
-                    font-family: $font1;
-                    font-weight: normal;
-                    font-size: 1.6rem;
-                    letter-spacing: 1px;
-                    margin-bottom: 26px;
-                }
+				h4 {
+					font-family: $font1;
+					font-weight: normal;
+					font-size: 1.6rem;
+					letter-spacing: 1px;
+					margin-bottom: 26px;
+				}
 
-                p {
-                    font-family: $font1;
-                    color: $color3;
-                    font-size: 1.1rem;
-                    letter-spacing: 1px;
+				p {
+					font-family: $font1;
+					color: $color3;
+					font-size: 1.1rem;
+					letter-spacing: 1px;
 
-                    i {
-                        font-size: 0.9rem;
-                        vertical-align: 15%;
-                    }
-                }
+					i {
+						font-size: 0.9rem;
+						vertical-align: 15%;
+					}
+				}
 
-                h6 {
-                    font-family: $font1;
-                    text-transform: uppercase;
-                    font-size: 1rem;
-                    letter-spacing: 3px;
-                    margin: 90px 0 57px;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
+				h6 {
+					font-family: $font1;
+					text-transform: uppercase;
+					font-size: 1rem;
+					letter-spacing: 3px;
+					margin: 90px 0 57px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
 }

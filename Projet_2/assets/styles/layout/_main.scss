@@ -1,78 +1,78 @@
 main {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background: $color1;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	background: $color1;
 
-    @media screen and (max-width: 863px) {
-        display: block;
-    }
+	@media screen and (max-width: 863px) {
+		display: block;
+	}
 
-    .main-left {
-        margin: 19px;
-        border: 1px dashed $color4;
+	.main-left {
+		margin: 19px;
+		border: 1px dashed $color4;
 
-        @media screen and (max-width: 200px) {
-            margin: 10px;
-        }
+		@media screen and (max-width: 200px) {
+			margin: 10px;
+		}
 
-        h4 {
-            font-family: $font2;
-            color: $color4;
-            font-size: 2.5rem;
-            font-weight: normal;
-            margin-top: 52px;
-            line-height: 20px;
+		h4 {
+			font-family: $font2;
+			color: $color4;
+			font-size: 2.5rem;
+			font-weight: normal;
+			margin-top: 52px;
+			line-height: 20px;
 
-            @media screen and (max-width: 200px) {
-                font-size: 1.8rem;
-            }
-        }
+			@media screen and (max-width: 200px) {
+				font-size: 1.8rem;
+			}
+		}
 
-        h3 {
-            text-transform: uppercase;
-            font-family: $font3;
-            font-size: 1.5rem;
-            margin-bottom: 32px;
-        }
+		h3 {
+			text-transform: uppercase;
+			font-family: $font3;
+			font-size: 1.5rem;
+			margin-bottom: 32px;
+		}
 
-        p {
-            margin: 30px auto;
-            max-width: 95%;
-            font-size: 1.3rem;
-            font-family: $font1;
+		p {
+			margin: 30px auto;
+			max-width: 95%;
+			font-size: 1.3rem;
+			font-family: $font1;
 
-            @media screen and (max-width: 200px) {
-                font-size: 1rem;
-                max-width: 99%;
-            }
-        }
+			@media screen and (max-width: 200px) {
+				font-size: 1rem;
+				max-width: 99%;
+			}
+		}
 
-        .russell {
-            width: 87px;
-            border-radius: 50px;
-        }
+		.russell {
+			width: 87px;
+			border-radius: 50px;
+		}
 
-        h2 {
-            margin: 15px 0 2px;
-            font-family: $font1;
-            font-size: 1.2rem;
-            letter-spacing: 1px;
-        }
+		h2 {
+			margin: 15px 0 2px;
+			font-family: $font1;
+			font-size: 1.2rem;
+			letter-spacing: 1px;
+		}
 
-        h5 {
-            font-family: $font1;
-            text-transform: uppercase;
-            color: $color3;
-            font-size: 0.9rem;
-            margin-bottom: 38px;
-        }
-    }
+		h5 {
+			font-family: $font1;
+			text-transform: uppercase;
+			color: $color3;
+			font-size: 0.9rem;
+			margin-bottom: 38px;
+		}
+	}
 
-    .main-right {
-        background: url("../img/store-01.jpg") no-repeat center/cover;
+	.main-right {
+		background: url('../img/store-01.webp') no-repeat center/cover;
 
-        @media screen and (max-width: 863px) {
-            display: none;
-        }
-    }
+		@media screen and (max-width: 863px) {
+			display: none;
+		}
+	}
 }
